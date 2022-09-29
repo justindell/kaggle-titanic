@@ -1,0 +1,3079 @@
+<?xml version="1.0"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.4">
+  <Header>
+    <Application name="Eps" version="0.4.1"/>
+  </Header>
+  <DataDictionary>
+    <DataField name="Survived" optype="categorical" dataType="string">
+      <Value value="0"/>
+      <Value value="1"/>
+    </DataField>
+    <DataField name="PassengerId" optype="continuous" dataType="double"/>
+    <DataField name="Pclass" optype="continuous" dataType="double"/>
+    <DataField name="Name" optype="categorical" dataType="string"/>
+    <DataField name="Sex" optype="categorical" dataType="string">
+      <Value value="female"/>
+      <Value value="male"/>
+    </DataField>
+    <DataField name="Age" optype="continuous" dataType="double"/>
+    <DataField name="SibSp" optype="continuous" dataType="double"/>
+    <DataField name="Parch" optype="continuous" dataType="double"/>
+    <DataField name="Ticket" optype="categorical" dataType="string">
+      <Value value="110152"/>
+      <Value value="110413"/>
+      <Value value="110465"/>
+      <Value value="110564"/>
+      <Value value="110813"/>
+      <Value value="111240"/>
+      <Value value="111320"/>
+      <Value value="111361"/>
+      <Value value="111426"/>
+      <Value value="111427"/>
+      <Value value="111428"/>
+      <Value value="112052"/>
+      <Value value="112053"/>
+      <Value value="112058"/>
+      <Value value="113028"/>
+      <Value value="113050"/>
+      <Value value="113051"/>
+      <Value value="113055"/>
+      <Value value="113056"/>
+      <Value value="113059"/>
+      <Value value="113505"/>
+      <Value value="113509"/>
+      <Value value="113510"/>
+      <Value value="113572"/>
+      <Value value="113760"/>
+      <Value value="113767"/>
+      <Value value="113776"/>
+      <Value value="113781"/>
+      <Value value="113783"/>
+      <Value value="113784"/>
+      <Value value="113789"/>
+      <Value value="113792"/>
+      <Value value="113796"/>
+      <Value value="113798"/>
+      <Value value="113800"/>
+      <Value value="113803"/>
+      <Value value="113804"/>
+      <Value value="113806"/>
+      <Value value="113807"/>
+      <Value value="11668"/>
+      <Value value="11751"/>
+      <Value value="11752"/>
+      <Value value="11753"/>
+      <Value value="11755"/>
+      <Value value="11765"/>
+      <Value value="11767"/>
+      <Value value="11769"/>
+      <Value value="11774"/>
+      <Value value="11813"/>
+      <Value value="11967"/>
+      <Value value="12233"/>
+      <Value value="12460"/>
+      <Value value="12749"/>
+      <Value value="13049"/>
+      <Value value="13213"/>
+      <Value value="13214"/>
+      <Value value="13502"/>
+      <Value value="13507"/>
+      <Value value="13509"/>
+      <Value value="13567"/>
+      <Value value="14311"/>
+      <Value value="14312"/>
+      <Value value="14973"/>
+      <Value value="1601"/>
+      <Value value="16966"/>
+      <Value value="16988"/>
+      <Value value="17421"/>
+      <Value value="17453"/>
+      <Value value="17463"/>
+      <Value value="17464"/>
+      <Value value="17465"/>
+      <Value value="17466"/>
+      <Value value="17474"/>
+      <Value value="19877"/>
+      <Value value="19928"/>
+      <Value value="19943"/>
+      <Value value="19947"/>
+      <Value value="19950"/>
+      <Value value="19952"/>
+      <Value value="19972"/>
+      <Value value="19996"/>
+      <Value value="21440"/>
+      <Value value="220845"/>
+      <Value value="223596"/>
+      <Value value="226593"/>
+      <Value value="226875"/>
+      <Value value="228414"/>
+      <Value value="230080"/>
+      <Value value="230136"/>
+      <Value value="230433"/>
+      <Value value="230434"/>
+      <Value value="231919"/>
+      <Value value="233639"/>
+      <Value value="233866"/>
+      <Value value="234360"/>
+      <Value value="234604"/>
+      <Value value="234686"/>
+      <Value value="234818"/>
+      <Value value="237442"/>
+      <Value value="237565"/>
+      <Value value="237671"/>
+      <Value value="237736"/>
+      <Value value="237789"/>
+      <Value value="237798"/>
+      <Value value="239853"/>
+      <Value value="239854"/>
+      <Value value="239855"/>
+      <Value value="239865"/>
+      <Value value="240929"/>
+      <Value value="24160"/>
+      <Value value="243847"/>
+      <Value value="243880"/>
+      <Value value="244252"/>
+      <Value value="244270"/>
+      <Value value="244278"/>
+      <Value value="244358"/>
+      <Value value="244361"/>
+      <Value value="244367"/>
+      <Value value="248706"/>
+      <Value value="248727"/>
+      <Value value="248731"/>
+      <Value value="248733"/>
+      <Value value="248738"/>
+      <Value value="248740"/>
+      <Value value="248747"/>
+      <Value value="250644"/>
+      <Value value="250646"/>
+      <Value value="250647"/>
+      <Value value="250648"/>
+      <Value value="250649"/>
+      <Value value="250651"/>
+      <Value value="250652"/>
+      <Value value="250653"/>
+      <Value value="250655"/>
+      <Value value="2620"/>
+      <Value value="2624"/>
+      <Value value="2625"/>
+      <Value value="2626"/>
+      <Value value="2627"/>
+      <Value value="2628"/>
+      <Value value="2629"/>
+      <Value value="2631"/>
+      <Value value="26360"/>
+      <Value value="2641"/>
+      <Value value="2647"/>
+      <Value value="2648"/>
+      <Value value="2650"/>
+      <Value value="2651"/>
+      <Value value="2653"/>
+      <Value value="2659"/>
+      <Value value="2661"/>
+      <Value value="2662"/>
+      <Value value="2663"/>
+      <Value value="2664"/>
+      <Value value="2666"/>
+      <Value value="2667"/>
+      <Value value="2668"/>
+      <Value value="2669"/>
+      <Value value="26707"/>
+      <Value value="2671"/>
+      <Value value="2672"/>
+      <Value value="2674"/>
+      <Value value="2677"/>
+      <Value value="2678"/>
+      <Value value="2680"/>
+      <Value value="2685"/>
+      <Value value="2687"/>
+      <Value value="2689"/>
+      <Value value="2690"/>
+      <Value value="2691"/>
+      <Value value="2693"/>
+      <Value value="2694"/>
+      <Value value="2695"/>
+      <Value value="2697"/>
+      <Value value="2699"/>
+      <Value value="2700"/>
+      <Value value="27042"/>
+      <Value value="27267"/>
+      <Value value="27849"/>
+      <Value value="28206"/>
+      <Value value="28220"/>
+      <Value value="28228"/>
+      <Value value="28403"/>
+      <Value value="28424"/>
+      <Value value="28425"/>
+      <Value value="28551"/>
+      <Value value="28664"/>
+      <Value value="28665"/>
+      <Value value="29011"/>
+      <Value value="2908"/>
+      <Value value="29103"/>
+      <Value value="29104"/>
+      <Value value="29106"/>
+      <Value value="29108"/>
+      <Value value="2926"/>
+      <Value value="29750"/>
+      <Value value="29751"/>
+      <Value value="3101264"/>
+      <Value value="3101265"/>
+      <Value value="3101267"/>
+      <Value value="3101276"/>
+      <Value value="3101277"/>
+      <Value value="3101278"/>
+      <Value value="3101295"/>
+      <Value value="3101296"/>
+      <Value value="3101298"/>
+      <Value value="31027"/>
+      <Value value="312991"/>
+      <Value value="312992"/>
+      <Value value="312993"/>
+      <Value value="31418"/>
+      <Value value="315037"/>
+      <Value value="315082"/>
+      <Value value="315084"/>
+      <Value value="315086"/>
+      <Value value="315090"/>
+      <Value value="315098"/>
+      <Value value="315151"/>
+      <Value value="323592"/>
+      <Value value="324669"/>
+      <Value value="330877"/>
+      <Value value="330909"/>
+      <Value value="330919"/>
+      <Value value="330923"/>
+      <Value value="330931"/>
+      <Value value="330932"/>
+      <Value value="330935"/>
+      <Value value="330958"/>
+      <Value value="330959"/>
+      <Value value="330979"/>
+      <Value value="334912"/>
+      <Value value="335097"/>
+      <Value value="335677"/>
+      <Value value="33638"/>
+      <Value value="336439"/>
+      <Value value="3411"/>
+      <Value value="34218"/>
+      <Value value="342826"/>
+      <Value value="343095"/>
+      <Value value="343120"/>
+      <Value value="343276"/>
+      <Value value="345364"/>
+      <Value value="345764"/>
+      <Value value="345765"/>
+      <Value value="345767"/>
+      <Value value="345770"/>
+      <Value value="345773"/>
+      <Value value="345778"/>
+      <Value value="345779"/>
+      <Value value="345781"/>
+      <Value value="345783"/>
+      <Value value="347054"/>
+      <Value value="347060"/>
+      <Value value="347061"/>
+      <Value value="347063"/>
+      <Value value="347064"/>
+      <Value value="347067"/>
+      <Value value="347068"/>
+      <Value value="347069"/>
+      <Value value="347071"/>
+      <Value value="347077"/>
+      <Value value="347078"/>
+      <Value value="347080"/>
+      <Value value="347081"/>
+      <Value value="347082"/>
+      <Value value="347083"/>
+      <Value value="347085"/>
+      <Value value="347087"/>
+      <Value value="347088"/>
+      <Value value="3474"/>
+      <Value value="347466"/>
+      <Value value="347468"/>
+      <Value value="347470"/>
+      <Value value="347742"/>
+      <Value value="347743"/>
+      <Value value="348123"/>
+      <Value value="348124"/>
+      <Value value="349201"/>
+      <Value value="349204"/>
+      <Value value="349205"/>
+      <Value value="349206"/>
+      <Value value="349207"/>
+      <Value value="349208"/>
+      <Value value="349209"/>
+      <Value value="349210"/>
+      <Value value="349212"/>
+      <Value value="349213"/>
+      <Value value="349214"/>
+      <Value value="349215"/>
+      <Value value="349216"/>
+      <Value value="349218"/>
+      <Value value="349219"/>
+      <Value value="349221"/>
+      <Value value="349222"/>
+      <Value value="349223"/>
+      <Value value="349224"/>
+      <Value value="349228"/>
+      <Value value="349231"/>
+      <Value value="349233"/>
+      <Value value="349236"/>
+      <Value value="349237"/>
+      <Value value="349239"/>
+      <Value value="349240"/>
+      <Value value="349241"/>
+      <Value value="349243"/>
+      <Value value="349244"/>
+      <Value value="349245"/>
+      <Value value="349246"/>
+      <Value value="349247"/>
+      <Value value="349249"/>
+      <Value value="349251"/>
+      <Value value="349252"/>
+      <Value value="349253"/>
+      <Value value="349256"/>
+      <Value value="349257"/>
+      <Value value="349909"/>
+      <Value value="349910"/>
+      <Value value="349912"/>
+      <Value value="350025"/>
+      <Value value="350034"/>
+      <Value value="350035"/>
+      <Value value="350042"/>
+      <Value value="350043"/>
+      <Value value="350046"/>
+      <Value value="350047"/>
+      <Value value="350404"/>
+      <Value value="350406"/>
+      <Value value="350407"/>
+      <Value value="35281"/>
+      <Value value="35852"/>
+      <Value value="358585"/>
+      <Value value="362316"/>
+      <Value value="363291"/>
+      <Value value="363294"/>
+      <Value value="363592"/>
+      <Value value="364498"/>
+      <Value value="364499"/>
+      <Value value="364500"/>
+      <Value value="364506"/>
+      <Value value="364511"/>
+      <Value value="364512"/>
+      <Value value="364516"/>
+      <Value value="364846"/>
+      <Value value="364848"/>
+      <Value value="364849"/>
+      <Value value="364850"/>
+      <Value value="36568"/>
+      <Value value="367226"/>
+      <Value value="367229"/>
+      <Value value="367230"/>
+      <Value value="367231"/>
+      <Value value="367232"/>
+      <Value value="367655"/>
+      <Value value="36864"/>
+      <Value value="368703"/>
+      <Value value="36928"/>
+      <Value value="36947"/>
+      <Value value="36967"/>
+      <Value value="36973"/>
+      <Value value="370129"/>
+      <Value value="370365"/>
+      <Value value="370370"/>
+      <Value value="370371"/>
+      <Value value="370372"/>
+      <Value value="370373"/>
+      <Value value="370375"/>
+      <Value value="370376"/>
+      <Value value="370377"/>
+      <Value value="371110"/>
+      <Value value="371362"/>
+      <Value value="372622"/>
+      <Value value="373450"/>
+      <Value value="374746"/>
+      <Value value="374887"/>
+      <Value value="374910"/>
+      <Value value="376564"/>
+      <Value value="376566"/>
+      <Value value="382649"/>
+      <Value value="382651"/>
+      <Value value="382652"/>
+      <Value value="383121"/>
+      <Value value="384461"/>
+      <Value value="386525"/>
+      <Value value="392091"/>
+      <Value value="392092"/>
+      <Value value="392096"/>
+      <Value value="394140"/>
+      <Value value="4133"/>
+      <Value value="4134"/>
+      <Value value="4136"/>
+      <Value value="4137"/>
+      <Value value="4138"/>
+      <Value value="4579"/>
+      <Value value="54636"/>
+      <Value value="5727"/>
+      <Value value="65304"/>
+      <Value value="65306"/>
+      <Value value="6563"/>
+      <Value value="693"/>
+      <Value value="695"/>
+      <Value value="7267"/>
+      <Value value="7534"/>
+      <Value value="7545"/>
+      <Value value="7546"/>
+      <Value value="7552"/>
+      <Value value="7598"/>
+      <Value value="8475"/>
+      <Value value="A./5. 2152"/>
+      <Value value="A.5. 11206"/>
+      <Value value="A/4 45380"/>
+      <Value value="A/4 48871"/>
+      <Value value="A/4. 34244"/>
+      <Value value="A/4. 39886"/>
+      <Value value="A/5 21171"/>
+      <Value value="A/5 21172"/>
+      <Value value="A/5 21173"/>
+      <Value value="A/5 21174"/>
+      <Value value="A/5 2466"/>
+      <Value value="A/5 3536"/>
+      <Value value="A/5 3540"/>
+      <Value value="A/5 3594"/>
+      <Value value="A/5 3902"/>
+      <Value value="A/5. 10482"/>
+      <Value value="A/5. 2151"/>
+      <Value value="A/5. 3336"/>
+      <Value value="A/5. 3337"/>
+      <Value value="A/5. 851"/>
+      <Value value="A/S 2816"/>
+      <Value value="A4. 54510"/>
+      <Value value="C 17369"/>
+      <Value value="C 4001"/>
+      <Value value="C 7075"/>
+      <Value value="C 7076"/>
+      <Value value="C.A. 18723"/>
+      <Value value="C.A. 2315"/>
+      <Value value="C.A. 24579"/>
+      <Value value="C.A. 24580"/>
+      <Value value="C.A. 29178"/>
+      <Value value="C.A. 29566"/>
+      <Value value="C.A. 31026"/>
+      <Value value="C.A. 31921"/>
+      <Value value="C.A. 33112"/>
+      <Value value="C.A. 33595"/>
+      <Value value="C.A. 34260"/>
+      <Value value="C.A. 34651"/>
+      <Value value="C.A. 37671"/>
+      <Value value="C.A. 6212"/>
+      <Value value="CA 2144"/>
+      <Value value="CA. 2314"/>
+      <Value value="CA. 2343"/>
+      <Value value="F.C. 12750"/>
+      <Value value="F.C.C. 13528"/>
+      <Value value="F.C.C. 13529"/>
+      <Value value="F.C.C. 13531"/>
+      <Value value="Fa 265302"/>
+      <Value value="LINE"/>
+      <Value value="P/PP 3381"/>
+      <Value value="PC 17318"/>
+      <Value value="PC 17473"/>
+      <Value value="PC 17474"/>
+      <Value value="PC 17475"/>
+      <Value value="PC 17476"/>
+      <Value value="PC 17477"/>
+      <Value value="PC 17482"/>
+      <Value value="PC 17485"/>
+      <Value value="PC 17569"/>
+      <Value value="PC 17572"/>
+      <Value value="PC 17582"/>
+      <Value value="PC 17585"/>
+      <Value value="PC 17590"/>
+      <Value value="PC 17592"/>
+      <Value value="PC 17593"/>
+      <Value value="PC 17599"/>
+      <Value value="PC 17600"/>
+      <Value value="PC 17601"/>
+      <Value value="PC 17603"/>
+      <Value value="PC 17604"/>
+      <Value value="PC 17605"/>
+      <Value value="PC 17608"/>
+      <Value value="PC 17609"/>
+      <Value value="PC 17610"/>
+      <Value value="PC 17611"/>
+      <Value value="PC 17612"/>
+      <Value value="PC 17754"/>
+      <Value value="PC 17755"/>
+      <Value value="PC 17756"/>
+      <Value value="PC 17757"/>
+      <Value value="PC 17758"/>
+      <Value value="PC 17759"/>
+      <Value value="PC 17760"/>
+      <Value value="PC 17761"/>
+      <Value value="PP 9549"/>
+      <Value value="S.C./A.4. 23567"/>
+      <Value value="S.C./PARIS 2079"/>
+      <Value value="S.O./P.P. 3"/>
+      <Value value="S.O.C. 14879"/>
+      <Value value="S.O.P. 1166"/>
+      <Value value="S.P. 3464"/>
+      <Value value="SC 1748"/>
+      <Value value="SC/AH 29037"/>
+      <Value value="SC/AH 3085"/>
+      <Value value="SC/PARIS 2131"/>
+      <Value value="SC/PARIS 2133"/>
+      <Value value="SC/PARIS 2149"/>
+      <Value value="SC/Paris 2123"/>
+      <Value value="SCO/W 1585"/>
+      <Value value="SO/C 14885"/>
+      <Value value="SOTON/O.Q. 3101305"/>
+      <Value value="SOTON/O.Q. 3101306"/>
+      <Value value="SOTON/O.Q. 3101307"/>
+      <Value value="SOTON/O.Q. 3101310"/>
+      <Value value="SOTON/O.Q. 3101312"/>
+      <Value value="SOTON/O.Q. 392078"/>
+      <Value value="SOTON/O.Q. 392087"/>
+      <Value value="SOTON/O2 3101272"/>
+      <Value value="SOTON/O2 3101287"/>
+      <Value value="SOTON/OQ 3101316"/>
+      <Value value="SOTON/OQ 3101317"/>
+      <Value value="SOTON/OQ 392086"/>
+      <Value value="SOTON/OQ 392089"/>
+      <Value value="SOTON/OQ 392090"/>
+      <Value value="STON/O 2. 3101269"/>
+      <Value value="STON/O 2. 3101273"/>
+      <Value value="STON/O 2. 3101274"/>
+      <Value value="STON/O 2. 3101275"/>
+      <Value value="STON/O 2. 3101280"/>
+      <Value value="STON/O 2. 3101285"/>
+      <Value value="STON/O 2. 3101288"/>
+      <Value value="STON/O 2. 3101289"/>
+      <Value value="STON/O 2. 3101292"/>
+      <Value value="STON/O 2. 3101294"/>
+      <Value value="STON/O2. 3101271"/>
+      <Value value="STON/O2. 3101279"/>
+      <Value value="STON/O2. 3101282"/>
+      <Value value="STON/O2. 3101283"/>
+      <Value value="STON/O2. 3101290"/>
+      <Value value="SW/PP 751"/>
+      <Value value="W./C. 14258"/>
+      <Value value="W./C. 14263"/>
+      <Value value="W./C. 6607"/>
+      <Value value="W./C. 6608"/>
+      <Value value="W./C. 6609"/>
+      <Value value="W.E.P. 5734"/>
+      <Value value="WE/P 5735"/>
+    </DataField>
+    <DataField name="Fare" optype="continuous" dataType="double"/>
+    <DataField name="Cabin" optype="categorical" dataType="string">
+      <Value value="A10"/>
+      <Value value="A16"/>
+      <Value value="A19"/>
+      <Value value="A23"/>
+      <Value value="A24"/>
+      <Value value="A26"/>
+      <Value value="A32"/>
+      <Value value="A34"/>
+      <Value value="A5"/>
+      <Value value="B101"/>
+      <Value value="B102"/>
+      <Value value="B18"/>
+      <Value value="B19"/>
+      <Value value="B20"/>
+      <Value value="B22"/>
+      <Value value="B28"/>
+      <Value value="B30"/>
+      <Value value="B35"/>
+      <Value value="B38"/>
+      <Value value="B4"/>
+      <Value value="B41"/>
+      <Value value="B42"/>
+      <Value value="B49"/>
+      <Value value="B5"/>
+      <Value value="B50"/>
+      <Value value="B51 B53 B55"/>
+      <Value value="B57 B59 B63 B66"/>
+      <Value value="B69"/>
+      <Value value="B71"/>
+      <Value value="B73"/>
+      <Value value="B77"/>
+      <Value value="B79"/>
+      <Value value="B80"/>
+      <Value value="B82 B84"/>
+      <Value value="B86"/>
+      <Value value="B96 B98"/>
+      <Value value="C101"/>
+      <Value value="C103"/>
+      <Value value="C110"/>
+      <Value value="C111"/>
+      <Value value="C123"/>
+      <Value value="C124"/>
+      <Value value="C125"/>
+      <Value value="C126"/>
+      <Value value="C128"/>
+      <Value value="C2"/>
+      <Value value="C22 C26"/>
+      <Value value="C23 C25 C27"/>
+      <Value value="C32"/>
+      <Value value="C45"/>
+      <Value value="C47"/>
+      <Value value="C50"/>
+      <Value value="C52"/>
+      <Value value="C62 C64"/>
+      <Value value="C65"/>
+      <Value value="C68"/>
+      <Value value="C78"/>
+      <Value value="C83"/>
+      <Value value="C85"/>
+      <Value value="C90"/>
+      <Value value="C91"/>
+      <Value value="C92"/>
+      <Value value="C93"/>
+      <Value value="C99"/>
+      <Value value="D"/>
+      <Value value="D10 D12"/>
+      <Value value="D15"/>
+      <Value value="D17"/>
+      <Value value="D19"/>
+      <Value value="D20"/>
+      <Value value="D21"/>
+      <Value value="D26"/>
+      <Value value="D28"/>
+      <Value value="D33"/>
+      <Value value="D35"/>
+      <Value value="D37"/>
+      <Value value="D45"/>
+      <Value value="D46"/>
+      <Value value="D47"/>
+      <Value value="D49"/>
+      <Value value="D9"/>
+      <Value value="E10"/>
+      <Value value="E101"/>
+      <Value value="E12"/>
+      <Value value="E121"/>
+      <Value value="E17"/>
+      <Value value="E24"/>
+      <Value value="E25"/>
+      <Value value="E31"/>
+      <Value value="E33"/>
+      <Value value="E34"/>
+      <Value value="E36"/>
+      <Value value="E38"/>
+      <Value value="E40"/>
+      <Value value="E44"/>
+      <Value value="E46"/>
+      <Value value="E49"/>
+      <Value value="E50"/>
+      <Value value="E58"/>
+      <Value value="E63"/>
+      <Value value="E67"/>
+      <Value value="E68"/>
+      <Value value="E77"/>
+      <Value value="E8"/>
+      <Value value="F E69"/>
+      <Value value="F G73"/>
+      <Value value="F2"/>
+      <Value value="F33"/>
+      <Value value="F38"/>
+      <Value value="F4"/>
+      <Value value="G6"/>
+      <Value value="T"/>
+    </DataField>
+    <DataField name="Embarked" optype="categorical" dataType="string">
+      <Value value="C"/>
+      <Value value="Q"/>
+      <Value value="S"/>
+    </DataField>
+  </DataDictionary>
+  <TransformationDictionary>
+    <DefineFunction name="NameTransform" optype="continuous">
+      <ParameterField name="text"/>
+      <ParameterField name="term"/>
+      <TextIndex textField="text" localTermWeights="termFrequency" wordSeparatorCharacterRE="\W+" isCaseSensitive="false">
+        <FieldRef field="term"/>
+      </TextIndex>
+    </DefineFunction>
+  </TransformationDictionary>
+  <MiningModel functionName="classification" algorithmName="LightGBM">
+    <MiningSchema>
+      <MiningField name="Survived" usageType="target"/>
+      <MiningField name="PassengerId"/>
+      <MiningField name="Pclass"/>
+      <MiningField name="Name"/>
+      <MiningField name="Sex"/>
+      <MiningField name="Age"/>
+      <MiningField name="SibSp"/>
+      <MiningField name="Parch"/>
+      <MiningField name="Ticket"/>
+      <MiningField name="Fare"/>
+      <MiningField name="Cabin"/>
+      <MiningField name="Embarked"/>
+    </MiningSchema>
+    <LocalTransformations>
+      <DerivedField name="Name(mr)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>mr</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(miss)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>miss</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(mrs)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>mrs</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(william)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>william</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(john)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>john</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(master)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>master</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(henry)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>henry</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(george)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>george</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(james)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>james</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(mary)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>mary</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(charles)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>charles</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(thomas)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>thomas</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(anna)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>anna</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(edward)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>edward</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(samuel)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>samuel</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(richard)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>richard</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(johan)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>johan</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(elizabeth)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>elizabeth</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(frederick)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>frederick</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(arthur)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>arthur</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(alfred)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>alfred</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(margaret)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>margaret</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(peter)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>peter</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(joseph)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>joseph</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(alexander)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>alexander</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(ernest)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>ernest</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(martin)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>martin</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(maria)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>maria</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(robert)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>robert</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(karl)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>karl</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(alice)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>alice</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(sage)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>sage</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(albert)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>albert</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(victor)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>victor</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(leonard)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>leonard</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(kate)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>kate</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(catherine)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>catherine</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(jr)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>jr</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(dr)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>dr</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(anne)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>anne</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(ernst)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>ernst</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(ellen)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>ellen</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(louise)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>louise</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(goodwin)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>goodwin</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(carter)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>carter</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(rice)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>rice</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(edith)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>edith</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(gustafsson)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>gustafsson</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(helen)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>helen</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(frank)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>frank</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(annie)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>annie</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(brown)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>brown</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(panula)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>panula</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(andersson)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>andersson</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(florence)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>florence</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(elias)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>elias</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(marion)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>marion</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(elsie)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>elsie</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(williams)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>williams</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(johnson)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>johnson</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(ford)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>ford</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(van)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>van</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(ivan)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>ivan</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(francis)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>francis</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(lefebre)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>lefebre</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(sofia)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>sofia</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(hanna)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>hanna</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(gustaf)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>gustaf</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(patrick)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>patrick</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(harry)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>harry</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(asplund)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>asplund</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(percival)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>percival</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(david)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>david</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(de)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>de</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(hugh)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>hugh</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(hart)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>hart</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(emily)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>emily</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(benjamin)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>benjamin</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(skoog)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>skoog</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(jacob)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>jacob</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(emil)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>emil</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(bengtsson)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>bengtsson</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(white)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>white</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(arnold)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>arnold</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(thayer)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>thayer</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(west)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>west</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(franchi)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>franchi</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(delia)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>delia</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(ada)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>ada</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(graham)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>graham</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(richards)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>richards</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(boulos)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>boulos</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(svensson)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>svensson</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(viktor)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>viktor</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(juha)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>juha</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(solomon)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>solomon</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(bourke)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>bourke</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(carl)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>carl</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(ethel)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>ethel</Constant>
+        </Apply>
+      </DerivedField>
+      <DerivedField name="Name(amelia)" optype="continuous" dataType="integer">
+        <Apply function="NameTransform">
+          <FieldRef field="Name"/>
+          <Constant>amelia</Constant>
+        </Apply>
+      </DerivedField>
+    </LocalTransformations>
+    <Segmentation multipleModelMethod="modelChain">
+      <Segment id="1">
+        <True/>
+        <MiningModel functionName="regression">
+          <MiningSchema>
+            <MiningField name="PassengerId"/>
+            <MiningField name="Pclass"/>
+            <MiningField name="Name"/>
+            <MiningField name="Sex"/>
+            <MiningField name="Age"/>
+            <MiningField name="SibSp"/>
+            <MiningField name="Parch"/>
+            <MiningField name="Ticket"/>
+            <MiningField name="Fare"/>
+            <MiningField name="Cabin"/>
+            <MiningField name="Embarked"/>
+          </MiningSchema>
+          <Output>
+            <OutputField name="lgbmValue" optype="continuous" dataType="double" feature="predictedValue" isFinalResult="false">
+              <Apply function="/">
+                <Constant dataType="double"/>
+                <Apply function="+">
+                  <Constant dataType="double"/>
+                  <Apply function="exp">
+                    <Apply function="*">
+                      <Constant dataType="double"/>
+                      <FieldRef field="lgbmValue"/>
+                    </Apply>
+                  </Apply>
+                </Apply>
+              </Apply>
+            </OutputField>
+          </Output>
+          <Segmentation multipleModelMethod="sum">
+            <Segment id="1">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Embarked"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Sex"/>
+                </MiningSchema>
+                <Node score="-0.20702733848279395">
+                  <True/>
+                  <Node score="-0.5316022086151401">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="-0.5056949285193939">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.266650000000002"/>
+                      <Node score="-0.3023790999419073">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="367.50000000000006"/>
+                        <Node score="-0.4043186151012566">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="33.25000000000001"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.4645567143787005">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                      <Node score="-0.5316022086151401">
+                        <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                        <Node score="-0.5435099025721912">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                          <Node score="-0.4864522023613216">
+                            <SimplePredicate field="Age" operator="greaterThan" value="26.500000000000004"/>
+                          </Node>
+                          <Node score="-0.5732791374648188">
+                            <SimplePredicate field="Age" operator="greaterThan" value="21.500000000000004"/>
+                          </Node>
+                        </Node>
+                        <Node score="-0.46908681534062213">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="142.50000000000003"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.5732791374648188">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="460.00000000000006"/>
+                      <Node score="-0.5732791374648188">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="671.5000000000001"/>
+                      </Node>
+                    </Node>
+                    <Node score="-0.46908681534062213">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                    </Node>
+                    <Node score="-0.5732791374648188">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="119.00000000000001"/>
+                    </Node>
+                  </Node>
+                  <Node score="-0.3065467928268753">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.5385483634234199">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                    </Node>
+                    <Node score="-0.3023790999419073">
+                      <SimplePredicate field="Age" operator="greaterThan" value="17.500000000000004"/>
+                      <Node score="-0.3996252672578243">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="358.50000000000006"/>
+                      </Node>
+                    </Node>
+                    <Node score="-0.2182534472638522">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="10.508350000000002"/>
+                    </Node>
+                  </Node>
+                  <Node score="-0.3558342912925822">
+                    <SimplePredicate field="Sex" operator="equal" value="male"/>
+                  </Node>
+                  <Node score="-0.15650984896803188">
+                    <SimplePredicate field="Fare" operator="greaterThan" value="22.762500000000003"/>
+                    <Node score="-0.1981867778177107">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="26.500000000000004"/>
+                      <Node score="-0.15650984896803194">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="504.00000000000006"/>
+                      </Node>
+                    </Node>
+                    <Node score="-0.15650984896803194">
+                      <SimplePredicate field="Embarked" operator="equal" value="C"/>
+                    </Node>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="2">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Embarked"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Sex"/>
+                </MiningSchema>
+                <Node score="0.1486162818679996">
+                  <True/>
+                  <Node score="-0.11587306826371038">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="-0.09120770905233522">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.266650000000002"/>
+                      <Node score="-0.0038982855133579777">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="367.50000000000006"/>
+                        <Node score="0.0831996194121646">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="52.27710000000001"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.05276165286099202">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                      <Node score="-0.1158730682637103">
+                        <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                        <Node score="-0.12643380304628174">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                          <Node score="-0.07311914503116278">
+                            <SimplePredicate field="Age" operator="greaterThan" value="26.500000000000004"/>
+                          </Node>
+                          <Node score="-0.15722247373433035">
+                            <SimplePredicate field="Fare" operator="greaterThan" value="7.977100000000001"/>
+                          </Node>
+                        </Node>
+                        <Node score="-0.056954649343779445">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="142.50000000000003"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.15636740108653047">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="460.00000000000006"/>
+                    </Node>
+                    <Node score="-0.05695464934377945">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                    </Node>
+                    <Node score="-0.15636740108653047">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="119.00000000000001"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.15438182542701767">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.122550205329167">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                    </Node>
+                    <Node score="0.036111301746561235">
+                      <SimplePredicate field="Age" operator="greaterThan" value="19.500000000000004"/>
+                    </Node>
+                    <Node score="0.07234180680695272">
+                      <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.04531293550651087">
+                    <SimplePredicate field="Sex" operator="equal" value="male"/>
+                  </Node>
+                  <Node score="0.2193264964347039">
+                    <SimplePredicate field="Fare" operator="greaterThan" value="26.125000000000004"/>
+                    <Node score="0.19804172992365465">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="115.44165000000002"/>
+                    </Node>
+                    <Node score="0.21694222565626065">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="375.50000000000006"/>
+                      <Node score="0.21694222565626053">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="608.5000000000001"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.2057627091076431">
+                    <SimplePredicate field="PassengerId" operator="greaterThan" value="381.00000000000006"/>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="3">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Embarked"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Sex"/>
+                </MiningSchema>
+                <Node score="0.13243812611308306">
+                  <True/>
+                  <Node score="-0.10896444017657198">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="-0.08423523800518393">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.266650000000002"/>
+                      <Node score="0.09252695939117389">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="367.50000000000006"/>
+                        <Node score="-0.0033684855386899707">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="33.25000000000001"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.048125436768178174">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                      <Node score="-0.10799578217144823">
+                        <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                        <Node score="-0.11880955730820152">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                          <Node score="-0.06711672749278921">
+                            <SimplePredicate field="Age" operator="greaterThan" value="26.500000000000004"/>
+                          </Node>
+                          <Node score="-0.1495443688087972">
+                            <SimplePredicate field="PassengerId" operator="greaterThan" value="665.5000000000001"/>
+                          </Node>
+                        </Node>
+                        <Node score="-0.05201496380569581">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="142.50000000000003"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.1482079313717621">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="460.00000000000006"/>
+                      <Node score="-0.14820793137176222">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="542.5000000000001"/>
+                      </Node>
+                    </Node>
+                    <Node score="-0.05201496380569583">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                    </Node>
+                    <Node score="-0.15005225362083308">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.13673879960899693">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.11451836301002152">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                    </Node>
+                    <Node score="0.03229498537332548">
+                      <SimplePredicate field="Age" operator="greaterThan" value="19.500000000000004"/>
+                    </Node>
+                    <Node score="0.06451685997066556">
+                      <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.04046053653728557">
+                    <SimplePredicate field="Sex" operator="equal" value="male"/>
+                  </Node>
+                  <Node score="0.19399003711977414">
+                    <SimplePredicate field="Fare" operator="greaterThan" value="26.125000000000004"/>
+                    <Node score="0.17694639145952884">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="115.44165000000002"/>
+                    </Node>
+                    <Node score="0.1959472882845196">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="26.500000000000004"/>
+                    </Node>
+                    <Node score="0.19413575078301054">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="485.50000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.18344958803235015">
+                    <SimplePredicate field="PassengerId" operator="greaterThan" value="381.00000000000006"/>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="4">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Embarked"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Name(miss)"/>
+                  <MiningField name="Sex"/>
+                </MiningSchema>
+                <Node score="0.11931373402421502">
+                  <True/>
+                  <Node score="-0.09951636091917698">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="-0.09463334438758551">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.266650000000002"/>
+                      <Node score="0.001082497819365812">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="482.50000000000006"/>
+                        <Node score="0.07744215096711621">
+                          <SimplePredicate field="Age" operator="lessOrEqual" value="42.50000000000001"/>
+                        </Node>
+                      </Node>
+                      <Node score="-0.019341516217882552">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="38.50000000000001"/>
+                      </Node>
+                    </Node>
+                    <Node score="-0.0438976662692309">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                      <Node score="-0.10099489726872413">
+                        <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                        <Node score="-0.11062919900976849">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                          <Node score="-0.06164917867482805">
+                            <SimplePredicate field="Age" operator="greaterThan" value="26.500000000000004"/>
+                          </Node>
+                          <Node score="-0.1427917309496118">
+                            <SimplePredicate field="Age" operator="greaterThan" value="21.500000000000004"/>
+                          </Node>
+                        </Node>
+                        <Node score="-0.04750980650418554">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="142.50000000000003"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.14156737510183967">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="460.00000000000006"/>
+                    </Node>
+                    <Node score="-0.04750980650418554">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                    </Node>
+                    <Node score="-0.14233592429644631">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="119.00000000000001"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.15155895102401953">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.10743903372297468">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                    </Node>
+                    <Node score="0.010079009501252118">
+                      <SimplePredicate field="Age" operator="greaterThan" value="24.250000000000004"/>
+                    </Node>
+                    <Node score="0.11085659654703975">
+                      <SimplePredicate field="Name(miss)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                      <Node score="0.002788617154589472">
+                        <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.03619072268739125">
+                    <SimplePredicate field="Sex" operator="equal" value="male"/>
+                  </Node>
+                  <Node score="0.17741641422124055">
+                    <SimplePredicate field="Fare" operator="greaterThan" value="26.125000000000004"/>
+                    <Node score="0.16101304374162234">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="115.44165000000002"/>
+                    </Node>
+                    <Node score="0.17887695912582746">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="26.500000000000004"/>
+                    </Node>
+                    <Node score="0.17752512930909414">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="485.50000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.16683439702864428">
+                    <SimplePredicate field="PassengerId" operator="greaterThan" value="381.00000000000006"/>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="5">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="SibSp"/>
+                  <MiningField name="Name(miss)"/>
+                  <MiningField name="Embarked"/>
+                  <MiningField name="Sex"/>
+                </MiningSchema>
+                <Node score="0.12728451023035314">
+                  <True/>
+                  <Node score="-0.09257091414991542">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="-0.09060967257556213">
+                      <SimplePredicate field="Pclass" operator="greaterThan" value="1.5000000000000002"/>
+                      <Node score="-0.07867939371156707">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                        <Node score="-0.04549647697158091">
+                          <SimplePredicate field="Age" operator="greaterThan" value="28.250000000000004"/>
+                        </Node>
+                        <Node score="-0.12787752523759757">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="8.925000000000002"/>
+                          <Node score="-0.08974543218858973">
+                            <SimplePredicate field="Fare" operator="greaterThan" value="15.525000000000002"/>
+                          </Node>
+                        </Node>
+                        <Node score="-0.025695279461010502">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                        </Node>
+                        <Node score="-0.10415349886303121">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="408.50000000000006"/>
+                        </Node>
+                      </Node>
+                      <Node score="-0.14589832941551403">
+                        <SimplePredicate field="SibSp" operator="greaterThan" value="1.0000000180025095e-35"/>
+                      </Node>
+                      <Node score="-0.0505191052030026">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                        <Node score="-0.10889328660885984">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="460.00000000000006"/>
+                        </Node>
+                      </Node>
+                      <Node score="-0.1446404789368101">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="280.00000000000006"/>
+                        <Node score="-0.1360803496971139">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="561.5000000000001"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="0.06526492602149735">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="45.25000000000001"/>
+                    </Node>
+                    <Node score="-0.01986392263136455">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="490.50000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.13635839390690005">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.10108675604524085">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                    </Node>
+                    <Node score="0.009057822408041578">
+                      <SimplePredicate field="Age" operator="greaterThan" value="24.250000000000004"/>
+                    </Node>
+                    <Node score="0.10003235192804621">
+                      <SimplePredicate field="Name(miss)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                      <Node score="0.002508988624431692">
+                        <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.032415887117173865">
+                    <SimplePredicate field="Sex" operator="equal" value="male"/>
+                  </Node>
+                  <Node score="0.16780925705398742">
+                    <SimplePredicate field="Fare" operator="greaterThan" value="22.762500000000003"/>
+                    <Node score="0.12857486785606964">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="26.500000000000004"/>
+                      <Node score="0.16592643466484097">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="504.00000000000006"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.1651103419564921">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="363.50000000000006"/>
+                      <Node score="0.16612065678932753">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="608.5000000000001"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="6">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Sex"/>
+                </MiningSchema>
+                <Node score="0.09686362226898865">
+                  <True/>
+                  <Node score="-0.08712427504342224">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="-0.07090948412084964">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.266650000000002"/>
+                      <Node score="-0.00961396287913767">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="367.50000000000006"/>
+                        <Node score="0.07459190062980947">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="52.27710000000001"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.09507584109773438">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="45.25000000000001"/>
+                      <Node score="-0.00847868493908266">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="204.50000000000003"/>
+                        <Node score="-0.1380821758184505">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="291.50000000000006"/>
+                          <Node score="-0.027704507590466117">
+                            <SimplePredicate field="Age" operator="greaterThan" value="19.500000000000004"/>
+                            <Node score="-0.08643189400147294">
+                              <SimplePredicate field="PassengerId" operator="greaterThan" value="675.0000000000001"/>
+                              <Node score="-0.11507167220226105">
+                                <SimplePredicate field="Age" operator="greaterThan" value="28.250000000000004"/>
+                              </Node>
+                            </Node>
+                            <Node score="-0.08420404688204863">
+                              <SimplePredicate field="Fare" operator="greaterThan" value="8.281250000000002"/>
+                            </Node>
+                          </Node>
+                        </Node>
+                      </Node>
+                      <Node score="-0.12124518117895622">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="7.977100000000001"/>
+                      </Node>
+                    </Node>
+                    <Node score="-0.13971396032181813">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="158.50000000000003"/>
+                      <Node score="-0.1134986636790206">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="8.081250000000002"/>
+                      </Node>
+                      <Node score="-0.1317959705725615">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="482.50000000000006"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.09587865037436402">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.09529864935763399">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                    </Node>
+                    <Node score="0.10622565910848424">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="16.500000000000004"/>
+                    </Node>
+                    <Node score="-0.020126394468523195">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="396.00000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.029066134725659144">
+                    <SimplePredicate field="Sex" operator="equal" value="male"/>
+                  </Node>
+                  <Node score="0.15487491795567376">
+                    <SimplePredicate field="Fare" operator="greaterThan" value="26.125000000000004"/>
+                    <Node score="0.13771169670557856">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="115.44165000000002"/>
+                    </Node>
+                    <Node score="0.15693512994728237">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="26.500000000000004"/>
+                    </Node>
+                    <Node score="0.1550070629225773">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="485.50000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.14434824581013922">
+                    <SimplePredicate field="PassengerId" operator="greaterThan" value="381.00000000000006"/>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="7">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="Name(miss)"/>
+                  <MiningField name="Sex"/>
+                  <MiningField name="Name(mrs)"/>
+                </MiningSchema>
+                <Node score="0.13908456039081293">
+                  <True/>
+                  <Node score="-0.08360693022850886">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="-0.08182698685524095">
+                      <SimplePredicate field="Pclass" operator="greaterThan" value="1.5000000000000002"/>
+                      <Node score="-0.022630765109466024">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                        <Node score="-0.08352998040339127">
+                          <SimplePredicate field="Age" operator="greaterThan" value="25.500000000000004"/>
+                          <Node score="-0.004044651325799851">
+                            <SimplePredicate field="PassengerId" operator="greaterThan" value="425.50000000000006"/>
+                          </Node>
+                        </Node>
+                        <Node score="-0.09419018707396033">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="8.081250000000002"/>
+                          <Node score="-0.14040219505163387">
+                            <SimplePredicate field="PassengerId" operator="greaterThan" value="650.5000000000001"/>
+                          </Node>
+                        </Node>
+                        <Node score="-0.07896344525472206">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                        </Node>
+                      </Node>
+                      <Node score="-0.13393333607763258">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="38.50000000000001"/>
+                      </Node>
+                      <Node score="-0.042765049744645615">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="45.25000000000001"/>
+                      </Node>
+                      <Node score="-0.13277747337226067">
+                        <SimplePredicate field="Age" operator="greaterThan" value="45.25000000000001"/>
+                      </Node>
+                      <Node score="-0.0641229326735252">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="8.081250000000002"/>
+                      </Node>
+                      <Node score="-0.12990142331001162">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="388.50000000000006"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.0596944220788451">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="45.25000000000001"/>
+                    </Node>
+                    <Node score="-0.017517401539284685">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="490.50000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.11843907185521932">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.08995502218976853">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                    </Node>
+                    <Node score="0.0037558637943598664">
+                      <SimplePredicate field="Age" operator="greaterThan" value="24.250000000000004"/>
+                    </Node>
+                    <Node score="0.09198746680545411">
+                      <SimplePredicate field="Name(miss)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                      <Node score="-0.0013550323257522884">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.02608473472466078">
+                    <SimplePredicate field="Sex" operator="equal" value="male"/>
+                  </Node>
+                  <Node score="0.14870459695245158">
+                    <SimplePredicate field="Fare" operator="greaterThan" value="26.125000000000004"/>
+                    <Node score="0.12923913823960007">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="115.44165000000002"/>
+                    </Node>
+                    <Node score="0.14711829689079856">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="375.50000000000006"/>
+                      <Node score="0.14694669651912892">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="33.50000000000001"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.09172772267305143">
+                    <SimplePredicate field="Name(mrs)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="8">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Embarked"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Sex"/>
+                </MiningSchema>
+                <Node score="0.09983121578155331">
+                  <True/>
+                  <Node score="-0.07765941477128359">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="0.07344708850447657">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.266650000000002"/>
+                      <Node score="-0.13615355613073896">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="30.597900000000003"/>
+                        <Node score="-0.037819805090213654">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="52.27710000000001"/>
+                          <Node score="0.08696205920167628">
+                            <SimplePredicate field="PassengerId" operator="greaterThan" value="452.00000000000006"/>
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.020115763521098586">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                      <Node score="-0.08072934862573501">
+                        <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                        <Node score="-0.043462457002118066">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                          <Node score="-0.08898322141901414">
+                            <SimplePredicate field="Age" operator="lessOrEqual" value="26.500000000000004"/>
+                            <Node score="-0.1288733528995116">
+                              <SimplePredicate field="Age" operator="greaterThan" value="21.500000000000004"/>
+                            </Node>
+                          </Node>
+                        </Node>
+                        <Node score="-0.027975031030036387">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="142.50000000000003"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.1247035344893734">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="460.00000000000006"/>
+                      <Node score="-0.12717451825697992">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="47.50000000000001"/>
+                      </Node>
+                      <Node score="-0.12582700256655818">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="7.883350000000001"/>
+                      </Node>
+                    </Node>
+                    <Node score="-0.01712661760136066">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                    </Node>
+                    <Node score="-0.12944681464295962">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.059870170444366516">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.08496707679473335">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                    </Node>
+                    <Node score="0.09923211570827455">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="15.525000000000002"/>
+                    </Node>
+                    <Node score="0.09794337876847403">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="19.500000000000004"/>
+                    </Node>
+                    <Node score="-0.05737694270701781">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="396.00000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.023424844154306564">
+                    <SimplePredicate field="Sex" operator="equal" value="male"/>
+                  </Node>
+                  <Node score="0.1437859108002501">
+                    <SimplePredicate field="Fare" operator="greaterThan" value="22.762500000000003"/>
+                    <Node score="0.1004072622830654">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="26.500000000000004"/>
+                      <Node score="0.14191704152830534">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="504.00000000000006"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.1410812215695997">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="363.50000000000006"/>
+                      <Node score="0.14213627664261266">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="608.5000000000001"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="9">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="SibSp"/>
+                  <MiningField name="Sex"/>
+                </MiningSchema>
+                <Node score="0.07174556926345406">
+                  <True/>
+                  <Node score="0.000117772649358225">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="-0.06858658807097644">
+                      <SimplePredicate field="Pclass" operator="greaterThan" value="1.5000000000000002"/>
+                      <Node score="-0.09360071960738647">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                        <Node score="-0.09142682737620147">
+                          <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                          <Node score="0.011777366435856843">
+                            <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                            <Node score="-0.05705880570257731">
+                              <SimplePredicate field="Age" operator="lessOrEqual" value="25.500000000000004"/>
+                            </Node>
+                          </Node>
+                          <Node score="-0.10903830627337124">
+                            <SimplePredicate field="PassengerId" operator="greaterThan" value="561.5000000000001"/>
+                          </Node>
+                          <Node score="-0.007673839348218473">
+                            <SimplePredicate field="Fare" operator="greaterThan" value="7.737500000000001"/>
+                          </Node>
+                        </Node>
+                      </Node>
+                      <Node score="-0.1336362995670843">
+                        <SimplePredicate field="SibSp" operator="greaterThan" value="1.0000000180025095e-35"/>
+                      </Node>
+                      <Node score="-0.02507378901649826">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                        <Node score="-0.0915350728209453">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="460.00000000000006"/>
+                        </Node>
+                      </Node>
+                      <Node score="-0.12876620073596987">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="280.00000000000006"/>
+                        <Node score="-0.12174582081449713">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="590.0000000000001"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="0.05817702789749224">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="42.50000000000001"/>
+                    </Node>
+                    <Node score="-0.07660919724335674">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="33.25000000000001"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.054139822390338044">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.08026853962695485">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                    </Node>
+                    <Node score="0.0906115590376738">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="15.525000000000002"/>
+                    </Node>
+                    <Node score="0.08931042098182802">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="19.500000000000004"/>
+                    </Node>
+                    <Node score="-0.0518451785356074">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="396.00000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.021047306907610256">
+                    <SimplePredicate field="Sex" operator="equal" value="male"/>
+                  </Node>
+                  <Node score="0.13514070303111236">
+                    <SimplePredicate field="Fare" operator="greaterThan" value="26.125000000000004"/>
+                    <Node score="0.11513939060213818">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="115.44165000000002"/>
+                    </Node>
+                    <Node score="0.13723690571293762">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="26.500000000000004"/>
+                    </Node>
+                    <Node score="0.13529580272530398">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="485.50000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.12346800822233653">
+                    <SimplePredicate field="PassengerId" operator="greaterThan" value="381.00000000000006"/>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="10">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Embarked"/>
+                </MiningSchema>
+                <Node score="0.13467236458972648">
+                  <True/>
+                  <Node score="-0.06695681330612382">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="0.06515863033310434">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.266650000000002"/>
+                      <Node score="-0.12695943198199405">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="30.597900000000003"/>
+                        <Node score="-0.03455015129261338">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="52.27710000000001"/>
+                          <Node score="0.08155456497065196">
+                            <SimplePredicate field="PassengerId" operator="greaterThan" value="452.00000000000006"/>
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.07735044045941158">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="45.25000000000001"/>
+                      <Node score="-0.10594595055781163">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="204.50000000000003"/>
+                        <Node score="-0.10236754134769076">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="675.0000000000001"/>
+                          <Node score="-0.07923127888895676">
+                            <SimplePredicate field="Age" operator="greaterThan" value="26.500000000000004"/>
+                          </Node>
+                        </Node>
+                        <Node score="0.0757793956431912">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                          <Node score="-0.05658957954896519">
+                            <SimplePredicate field="Fare" operator="greaterThan" value="9.22085"/>
+                            <Node score="-0.043065774358706205">
+                              <SimplePredicate field="PassengerId" operator="greaterThan" value="404.50000000000006"/>
+                            </Node>
+                          </Node>
+                        </Node>
+                        <Node score="-0.025494520262098527">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="7.737500000000001"/>
+                        </Node>
+                      </Node>
+                      <Node score="-0.10915376330324567">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="26.500000000000004"/>
+                      </Node>
+                    </Node>
+                    <Node score="-0.12660614154834468">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="158.50000000000003"/>
+                      <Node score="-0.09810691972245608">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="8.081250000000002"/>
+                      </Node>
+                      <Node score="-0.11962058270042804">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="482.50000000000006"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.12678799003530694">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.07581006730839149">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                    </Node>
+                    <Node score="-0.023455242763038283">
+                      <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                      <Node score="0.07894758198990748">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="430.50000000000006"/>
+                      </Node>
+                    </Node>
+                    <Node score="-0.008011427612039173">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="500.50000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="-0.015764880909206837">
+                    <SimplePredicate field="Age" operator="greaterThan" value="22.500000000000004"/>
+                    <Node score="0.08445649059394207">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="27.735400000000002"/>
+                      <Node score="0.1413080058464765">
+                        <SimplePredicate field="Embarked" operator="equal" value="C"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.07923397367695399">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="36.25000000000001"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.1756203225462205">
+                    <SimplePredicate field="Age" operator="lessOrEqual" value="15.500000000000002"/>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="11">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Embarked"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Sex"/>
+                </MiningSchema>
+                <Node score="0.009457085176929468">
+                  <True/>
+                  <Node score="-0.062299270688897915">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="0.058187870462858594">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.266650000000002"/>
+                      <Node score="-0.1207269643369729">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="30.597900000000003"/>
+                        <Node score="-0.03148761637799758">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="52.27710000000001"/>
+                          <Node score="0.07290869521754331">
+                            <SimplePredicate field="PassengerId" operator="greaterThan" value="452.00000000000006"/>
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.003477995060697161">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                      <Node score="-0.06686063736681246">
+                        <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                        <Node score="-0.03333180884693011">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                          <Node score="-0.07811496191372547">
+                            <SimplePredicate field="Age" operator="lessOrEqual" value="26.500000000000004"/>
+                            <Node score="-0.12223996665358833">
+                              <SimplePredicate field="Age" operator="greaterThan" value="21.500000000000004"/>
+                            </Node>
+                          </Node>
+                        </Node>
+                        <Node score="-0.015974797485239087">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="142.50000000000003"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.11739374731667547">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="460.00000000000006"/>
+                      <Node score="-0.12094474799540507">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="47.50000000000001"/>
+                      </Node>
+                      <Node score="-0.11866253224758933">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="7.883350000000001"/>
+                      </Node>
+                    </Node>
+                    <Node score="-0.0019216276166830603">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                    </Node>
+                    <Node score="-0.1216484012494426">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="119.00000000000001"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.053385965639684486">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.07155518618573241">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                    </Node>
+                    <Node score="0.0808964482433507">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="15.525000000000002"/>
+                    </Node>
+                    <Node score="0.0779405226249395">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="19.500000000000004"/>
+                    </Node>
+                    <Node score="-0.04753883326105929">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="7.883350000000001"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.061572794565590276">
+                    <SimplePredicate field="Sex" operator="equal" value="female"/>
+                    <Node score="0.12877081580615538">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.125000000000004"/>
+                      <Node score="0.10403693787989605">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="115.44165000000002"/>
+                      </Node>
+                      <Node score="0.1273698937803822">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="456.50000000000006"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.11462588823571243">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="381.00000000000006"/>
+                    </Node>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="12">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Embarked"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="SibSp"/>
+                  <MiningField name="Parch"/>
+                </MiningSchema>
+                <Node score="0.12718031911668876">
+                  <True/>
+                  <Node score="-0.010761342220708727">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="-0.08391642787706846">
+                      <SimplePredicate field="Pclass" operator="greaterThan" value="1.5000000000000002"/>
+                      <Node score="-0.08305985509313803">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                        <Node score="0.008855128543710471">
+                          <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                          <Node score="-0.04005406967882468">
+                            <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                            <Node score="0.01349982028026408">
+                              <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                              <Node score="-0.05892665194835206">
+                                <SimplePredicate field="Fare" operator="greaterThan" value="8.925000000000002"/>
+                              </Node>
+                            </Node>
+                            <Node score="-0.12399177882539945">
+                              <SimplePredicate field="PassengerId" operator="greaterThan" value="408.50000000000006"/>
+                            </Node>
+                          </Node>
+                        </Node>
+                      </Node>
+                      <Node score="-0.12957159918410308">
+                        <SimplePredicate field="SibSp" operator="greaterThan" value="1.0000000180025095e-35"/>
+                      </Node>
+                      <Node score="-0.1150895063567974">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="460.00000000000006"/>
+                        <Node score="-0.05400838299975241">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="12.500000000000002"/>
+                        </Node>
+                        <Node score="-0.11861769076477016">
+                          <SimplePredicate field="Age" operator="lessOrEqual" value="47.50000000000001"/>
+                        </Node>
+                      </Node>
+                      <Node score="0.00651959834977299">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="249.50000000000003"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.05074300298080393">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="45.25000000000001"/>
+                    </Node>
+                    <Node score="-0.06535132286499636">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="30.597900000000003"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.05942993549105177">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.018752030524784913">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="21.037500000000005"/>
+                      <Node score="-0.10337302655149594">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="408.50000000000006"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.09578080049684079">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="16.500000000000004"/>
+                    </Node>
+                    <Node score="-0.030645985433837425">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="396.00000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="-0.021096396533304345">
+                    <SimplePredicate field="Age" operator="greaterThan" value="22.500000000000004"/>
+                    <Node score="0.12052955849057456">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="27.735400000000002"/>
+                      <Node score="0.0598583362639073">
+                        <SimplePredicate field="Parch" operator="greaterThan" value="1.0000000180025095e-35"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.06806740547867639">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="36.25000000000001"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.16419053766892044">
+                    <SimplePredicate field="Age" operator="lessOrEqual" value="15.500000000000002"/>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="13">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Name(miss)"/>
+                  <MiningField name="Sex"/>
+                  <MiningField name="Embarked"/>
+                </MiningSchema>
+                <Node score="-0.00014958219812194766">
+                  <True/>
+                  <Node score="-0.06035526995859589">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="-0.06371232163192565">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.266650000000002"/>
+                      <Node score="0.07175304824987466">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="482.50000000000006"/>
+                        <Node score="0.0038747245973339175">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="665.5000000000001"/>
+                        </Node>
+                      </Node>
+                      <Node score="-0.011205945580732072">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="38.50000000000001"/>
+                      </Node>
+                    </Node>
+                    <Node score="-0.10144009141431015">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="45.25000000000001"/>
+                      <Node score="0.03547362173888023">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="204.50000000000003"/>
+                        <Node score="-0.095194894521483">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="675.0000000000001"/>
+                          <Node score="-0.06866234380083194">
+                            <SimplePredicate field="PassengerId" operator="greaterThan" value="762.5000000000001"/>
+                          </Node>
+                        </Node>
+                        <Node score="0.007016266744785779">
+                          <SimplePredicate field="Age" operator="greaterThan" value="20.250000000000004"/>
+                          <Node score="-0.019894511329186435">
+                            <SimplePredicate field="Age" operator="lessOrEqual" value="30.250000000000004"/>
+                            <Node score="-0.10442251530338707">
+                              <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                            </Node>
+                          </Node>
+                        </Node>
+                      </Node>
+                      <Node score="-0.0651539057565471">
+                        <SimplePredicate field="Age" operator="greaterThan" value="26.500000000000004"/>
+                      </Node>
+                    </Node>
+                    <Node score="-0.12245057728405664">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="195.50000000000003"/>
+                      <Node score="-0.08420946897655546">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="8.081250000000002"/>
+                      </Node>
+                      <Node score="-0.11401468752952382">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="482.50000000000006"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.06031004259331414">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.0638469066808706">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                    </Node>
+                    <Node score="0.07195297768487163">
+                      <SimplePredicate field="Name(miss)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                      <Node score="-0.05567984974162291">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="233.50000000000003"/>
+                        <Node score="0.023513397843958984">
+                          <SimplePredicate field="Age" operator="lessOrEqual" value="23.250000000000004"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.05299147617796667">
+                    <SimplePredicate field="Sex" operator="equal" value="female"/>
+                    <Node score="0.12104950276773503">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.125000000000004"/>
+                      <Node score="0.09479963928655394">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="115.44165000000002"/>
+                      </Node>
+                      <Node score="0.12188872051226232">
+                        <SimplePredicate field="Age" operator="greaterThan" value="18.500000000000004"/>
+                        <Node score="0.12326347832361313">
+                          <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="0.1075071264849631">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="381.00000000000006"/>
+                    </Node>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="14">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="Embarked"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="SibSp"/>
+                  <MiningField name="Sex"/>
+                  <MiningField name="Name(mrs)"/>
+                </MiningSchema>
+                <Node score="-0.0001346246108700857">
+                  <True/>
+                  <Node score="-0.04837046413156083">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="0.05272853681629567">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.266650000000002"/>
+                      <Node score="-0.11411950592726712">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="30.597900000000003"/>
+                        <Node score="-0.026352659996310014">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="52.27710000000001"/>
+                          <Node score="0.06643357998554464">
+                            <SimplePredicate field="PassengerId" operator="greaterThan" value="452.00000000000006"/>
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="0.0019593855522008824">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                      <Node score="-0.054973774137304615">
+                        <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                        <Node score="0.007491704708293242">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="284.50000000000006"/>
+                          <Node score="-0.069872773380787">
+                            <SimplePredicate field="Age" operator="lessOrEqual" value="28.250000000000004"/>
+                            <Node score="-0.11899106496727388">
+                              <SimplePredicate field="Fare" operator="greaterThan" value="9.22085"/>
+                            </Node>
+                          </Node>
+                        </Node>
+                        <Node score="-0.006821013047443593">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="142.50000000000003"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.11254152184209516">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="460.00000000000006"/>
+                      <Node score="-0.11640282687903808">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="47.50000000000001"/>
+                      </Node>
+                      <Node score="-0.11394977256958945">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="7.883350000000001"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.023126714546843896">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="288.50000000000006"/>
+                    </Node>
+                    <Node score="-0.12047132287118774">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.09155320228491906">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.06900760728927362">
+                      <SimplePredicate field="SibSp" operator="greaterThan" value="2.5000000000000004"/>
+                    </Node>
+                    <Node score="-0.038354535817992606">
+                      <SimplePredicate field="Age" operator="greaterThan" value="27.500000000000004"/>
+                    </Node>
+                    <Node score="-0.002266125016207372">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="204.50000000000003"/>
+                      <Node score="0.07018900442882264">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="18.500000000000004"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.10575244497925776">
+                    <SimplePredicate field="Sex" operator="equal" value="female"/>
+                    <Node score="0.11865097104970052">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.125000000000004"/>
+                      <Node score="0.09065204208848227">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="115.44165000000002"/>
+                      </Node>
+                      <Node score="0.11938073538315347">
+                        <SimplePredicate field="Age" operator="greaterThan" value="18.500000000000004"/>
+                        <Node score="0.12056935358352328">
+                          <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="0.050984661948139144">
+                      <SimplePredicate field="Name(mrs)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    </Node>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="15">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Parch"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="SibSp"/>
+                  <MiningField name="Sex"/>
+                </MiningSchema>
+                <Node score="0.11944952784693111">
+                  <True/>
+                  <Node score="-0.05127799121942028">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="-0.04270342768451605">
+                      <SimplePredicate field="Pclass" operator="greaterThan" value="1.5000000000000002"/>
+                      <Node score="-0.10706949963444595">
+                        <SimplePredicate field="Parch" operator="greaterThan" value="1.0000000180025095e-35"/>
+                      </Node>
+                      <Node score="0.009406435736572029">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="25.964600000000004"/>
+                      </Node>
+                      <Node score="-0.05995357028037588">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="45.25000000000001"/>
+                        <Node score="-0.09360638026458108">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="14.427100000000001"/>
+                        </Node>
+                        <Node score="0.03828580164142446">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                          <Node score="0.05270413844340182">
+                            <SimplePredicate field="Age" operator="greaterThan" value="30.250000000000004"/>
+                          </Node>
+                          <Node score="-0.08364460255915099">
+                            <SimplePredicate field="Age" operator="greaterThan" value="20.250000000000004"/>
+                          </Node>
+                        </Node>
+                        <Node score="-0.12355128559567988">
+                          <SimplePredicate field="Age" operator="greaterThan" value="29.500000000000004"/>
+                        </Node>
+                        <Node score="0.0025830568072504993">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="391.50000000000006"/>
+                        </Node>
+                      </Node>
+                      <Node score="-0.11052557501754932">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="463.50000000000006"/>
+                        <Node score="-0.11210702503302428">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="7.883350000000001"/>
+                        </Node>
+                      </Node>
+                      <Node score="-0.08496775921276446">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="158.50000000000003"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.001387897672319058">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="51.50000000000001"/>
+                      <Node score="0.06613980892560159">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="460.00000000000006"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.08495965047351307">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.06455339825272037">
+                      <SimplePredicate field="SibSp" operator="greaterThan" value="2.5000000000000004"/>
+                    </Node>
+                    <Node score="-0.03484372305239072">
+                      <SimplePredicate field="Age" operator="greaterThan" value="27.500000000000004"/>
+                    </Node>
+                    <Node score="-0.0035552082872418373">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="204.50000000000003"/>
+                      <Node score="0.06234798564580878">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="11.750000000000002"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="-0.003766257234808562">
+                    <SimplePredicate field="Age" operator="greaterThan" value="22.500000000000004"/>
+                    <Node score="-0.11338112824574352">
+                      <SimplePredicate field="Sex" operator="equal" value="male"/>
+                    </Node>
+                    <Node score="0.0805532516895121">
+                      <SimplePredicate field="Age" operator="greaterThan" value="27.500000000000004"/>
+                      <Node score="0.12356709702164162">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                        <Node score="0.1184800301379533">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="52.82710000000001"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.1610568628949417">
+                    <SimplePredicate field="Age" operator="lessOrEqual" value="11.500000000000002"/>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="16">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Parch"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="Sex"/>
+                </MiningSchema>
+                <Node score="0.11728257155115025">
+                  <True/>
+                  <Node score="-0.058201417332812644">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="-0.04109397768529157">
+                      <SimplePredicate field="Pclass" operator="greaterThan" value="1.5000000000000002"/>
+                      <Node score="-0.10287221213524869">
+                        <SimplePredicate field="Parch" operator="greaterThan" value="1.0000000180025095e-35"/>
+                      </Node>
+                      <Node score="0.03409751720573622">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                        <Node score="-0.051674176390055074">
+                          <SimplePredicate field="Age" operator="greaterThan" value="25.500000000000004"/>
+                          <Node score="0.035512495995995395">
+                            <SimplePredicate field="PassengerId" operator="greaterThan" value="425.50000000000006"/>
+                          </Node>
+                        </Node>
+                        <Node score="-0.10150062782922041">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="8.081250000000002"/>
+                        </Node>
+                        <Node score="-0.042680166798077915">
+                          <SimplePredicate field="Age" operator="greaterThan" value="20.250000000000004"/>
+                        </Node>
+                      </Node>
+                      <Node score="-0.11754727629144246">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="38.50000000000001"/>
+                      </Node>
+                      <Node score="0.03410345540199646">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="45.25000000000001"/>
+                      </Node>
+                      <Node score="-0.11512339836314688">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="77.00000000000001"/>
+                      </Node>
+                      <Node score="-0.002799252763216718">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="8.081250000000002"/>
+                      </Node>
+                      <Node score="-0.11286358225623115">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="388.50000000000006"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.04328362961718808">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="45.25000000000001"/>
+                    </Node>
+                    <Node score="-0.012846501486298251">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="490.50000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.04638453844200462">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.004627080079777209">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="21.037500000000005"/>
+                      <Node score="-0.09596108294453179">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="408.50000000000006"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.07727628283405112">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="16.500000000000004"/>
+                    </Node>
+                    <Node score="-0.029035193468777844">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="396.00000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="-0.003381888420249465">
+                    <SimplePredicate field="Age" operator="greaterThan" value="22.500000000000004"/>
+                    <Node score="-0.10246089235860743">
+                      <SimplePredicate field="Sex" operator="equal" value="male"/>
+                    </Node>
+                    <Node score="0.07578484597543104">
+                      <SimplePredicate field="Age" operator="greaterThan" value="27.500000000000004"/>
+                      <Node score="0.12088213240742532">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                        <Node score="0.11642038604954197">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="52.82710000000001"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.15292608902781926">
+                    <SimplePredicate field="Age" operator="lessOrEqual" value="11.500000000000002"/>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="17">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="SibSp"/>
+                  <MiningField name="Embarked"/>
+                  <MiningField name="Sex"/>
+                </MiningSchema>
+                <Node score="0.11538862244830815">
+                  <True/>
+                  <Node score="-0.11841264049275131">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="0.04928804306141339">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="26.266650000000002"/>
+                      <Node score="-0.10794734578002713">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="30.597900000000003"/>
+                        <Node score="0.06420851777761082">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="52.27710000000001"/>
+                          <Node score="-0.018687855560650155">
+                            <SimplePredicate field="Fare" operator="greaterThan" value="72.39165000000001"/>
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                    <Node score="-0.036268697263614195">
+                      <SimplePredicate field="Fare" operator="greaterThan" value="7.133350000000001"/>
+                      <Node score="-0.08996108102023771">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="45.25000000000001"/>
+                        <Node score="-0.08688529976571299">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="675.0000000000001"/>
+                          <Node score="-0.05097190247087816">
+                            <SimplePredicate field="PassengerId" operator="greaterThan" value="762.5000000000001"/>
+                          </Node>
+                        </Node>
+                        <Node score="-0.06312779658408929">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="204.50000000000003"/>
+                          <Node score="0.056145843135434484">
+                            <SimplePredicate field="Age" operator="lessOrEqual" value="21.500000000000004"/>
+                          </Node>
+                          <Node score="0.02520012050318836">
+                            <SimplePredicate field="Age" operator="greaterThan" value="30.250000000000004"/>
+                          </Node>
+                          <Node score="-0.030658433530571485">
+                            <SimplePredicate field="PassengerId" operator="greaterThan" value="355.50000000000006"/>
+                          </Node>
+                        </Node>
+                        <Node score="-0.0395776696287726">
+                          <SimplePredicate field="Age" operator="greaterThan" value="26.500000000000004"/>
+                        </Node>
+                      </Node>
+                      <Node score="-0.1154238926881829">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="158.50000000000003"/>
+                        <Node score="-0.07618761540364247">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="8.081250000000002"/>
+                        </Node>
+                        <Node score="-0.10848229869171813">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="551.0000000000001"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.11409966162982728">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="-0.0587346630984532">
+                      <SimplePredicate field="SibSp" operator="greaterThan" value="2.5000000000000004"/>
+                    </Node>
+                    <Node score="-0.031226496456941418">
+                      <SimplePredicate field="Age" operator="greaterThan" value="27.500000000000004"/>
+                    </Node>
+                    <Node score="-0.023628521603415147">
+                      <SimplePredicate field="Embarked" operator="equal" value="S"/>
+                      <Node score="0.045070754472583914">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="430.50000000000006"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.00889986940939423">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="381.00000000000006"/>
+                    </Node>
+                  </Node>
+                  <Node score="-0.0030374666475253657">
+                    <SimplePredicate field="Age" operator="greaterThan" value="22.500000000000004"/>
+                    <Node score="-0.09308991961929565">
+                      <SimplePredicate field="Sex" operator="equal" value="male"/>
+                    </Node>
+                    <Node score="0.07126632825634503">
+                      <SimplePredicate field="Age" operator="greaterThan" value="27.500000000000004"/>
+                      <Node score="0.11854850173226845">
+                        <SimplePredicate field="Fare" operator="greaterThan" value="23.350000000000005"/>
+                        <Node score="0.1146199426925596">
+                          <SimplePredicate field="Fare" operator="greaterThan" value="52.82710000000001"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.14611083107844045">
+                    <SimplePredicate field="Age" operator="lessOrEqual" value="11.500000000000002"/>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+            <Segment id="18">
+              <True/>
+              <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+                <MiningSchema>
+                  <MiningField name="Name(mr)"/>
+                  <MiningField name="Pclass"/>
+                  <MiningField name="Parch"/>
+                  <MiningField name="PassengerId"/>
+                  <MiningField name="Fare"/>
+                  <MiningField name="Age"/>
+                  <MiningField name="SibSp"/>
+                </MiningSchema>
+                <Node score="0.03887062015435009">
+                  <True/>
+                  <Node score="0.008774594168344375">
+                    <SimplePredicate field="Name(mr)" operator="greaterThan" value="1.0000000180025095e-35"/>
+                    <Node score="0.012197854499344338">
+                      <SimplePredicate field="Pclass" operator="greaterThan" value="1.5000000000000002"/>
+                      <Node score="-0.09870926732350037">
+                        <SimplePredicate field="Parch" operator="greaterThan" value="1.0000000180025095e-35"/>
+                      </Node>
+                      <Node score="-0.11901945856771444">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="557.5000000000001"/>
+                        <Node score="-0.09068193414842925">
+                          <SimplePredicate field="PassengerId" operator="greaterThan" value="642.0000000000001"/>
+                          <Node score="0.012398880889374388">
+                            <SimplePredicate field="Fare" operator="greaterThan" value="7.910400000000001"/>
+                            <Node score="-0.05099631927334171">
+                              <SimplePredicate field="Age" operator="lessOrEqual" value="29.500000000000004"/>
+                            </Node>
+                          </Node>
+                        </Node>
+                      </Node>
+                      <Node score="-0.030454047427577343">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="391.50000000000006"/>
+                        <Node score="0.058960213256126395">
+                          <SimplePredicate field="Age" operator="lessOrEqual" value="32.25000000000001"/>
+                        </Node>
+                      </Node>
+                      <Node score="-0.09347281714470153">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="291.50000000000006"/>
+                      </Node>
+                      <Node score="0.014362732479735222">
+                        <SimplePredicate field="Age" operator="lessOrEqual" value="27.500000000000004"/>
+                      </Node>
+                      <Node score="-0.10152827304916097">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="108.50000000000001"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.055059484197425596">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="586.5000000000001"/>
+                    </Node>
+                    <Node score="-0.07084644266177001">
+                      <SimplePredicate field="Age" operator="greaterThan" value="41.50000000000001"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.0649344497169284">
+                    <SimplePredicate field="Fare" operator="greaterThan" value="31.33125"/>
+                    <Node score="0.017247256343887424">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="735.5000000000001"/>
+                    </Node>
+                    <Node score="0.14302991981931998">
+                      <SimplePredicate field="Age" operator="lessOrEqual" value="40.25000000000001"/>
+                      <Node score="0.06518951895270313">
+                        <SimplePredicate field="PassengerId" operator="greaterThan" value="436.50000000000006"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="-0.05377485432759415">
+                    <SimplePredicate field="Age" operator="greaterThan" value="37.50000000000001"/>
+                  </Node>
+                  <Node score="-0.01254119071588272">
+                    <SimplePredicate field="Pclass" operator="greaterThan" value="2.5000000000000004"/>
+                    <Node score="0.05670103654734076">
+                      <SimplePredicate field="SibSp" operator="greaterThan" value="1.0000000180025095e-35"/>
+                      <Node score="-0.06290009473065489">
+                        <SimplePredicate field="Age" operator="greaterThan" value="1.5000000000000002"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.06732716583970996">
+                      <SimplePredicate field="PassengerId" operator="greaterThan" value="646.5000000000001"/>
+                    </Node>
+                    <Node score="0.03802166874246096">
+                      <SimplePredicate field="Age" operator="greaterThan" value="11.500000000000002"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.12792395526819758">
+                    <SimplePredicate field="PassengerId" operator="greaterThan" value="399.50000000000006"/>
+                  </Node>
+                </Node>
+              </TreeModel>
+            </Segment>
+          </Segmentation>
+        </MiningModel>
+      </Segment>
+      <Segment id="2">
+        <True/>
+        <RegressionModel functionName="classification" normalizationMethod="none">
+          <MiningSchema>
+            <MiningField name="Survived" usageType="target"/>
+            <MiningField name="transformedLgbmValue"/>
+          </MiningSchema>
+          <Output>
+            <OutputField name="probability(0)" optype="continuous" dataType="double" feature="probability" value="0"/>
+            <OutputField name="probability(1)" optype="continuous" dataType="double" feature="probability" value="1"/>
+          </Output>
+          <RegressionTable intercept="0.0" targetCategory="1">
+            <NumericPredictor name="transformedLgbmValue" coefficient="1.0"/>
+          </RegressionTable>
+          <RegressionTable intercept="0.0" targetCategory="0"/>
+        </RegressionModel>
+      </Segment>
+    </Segmentation>
+  </MiningModel>
+</PMML>
